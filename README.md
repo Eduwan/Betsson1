@@ -11,7 +11,10 @@ It covers positive, and negative test cases and generates HTML test reports.
 - Invalid username/password combinations
 - Locked out user
 - Empty credentials
-- Basic UI validation (error messages, redirects)
+- Case sensitive credentials
+- Successful checkout
+- Unsucessful checkout (missing postal details) 
+- Basic UI validation (error messages, titles, texts displayed)
 
 ## Technology used
 
