@@ -27,3 +27,20 @@ Running 18 tests using 16 workers
 
   npx playwright show-report
 
+
+# Checkout Tests Report:
+
+Running 6 tests using 6 workers
+
+ 1.  ✓  1 [chromium] › tests\checkout.spec.js:30:5 › Checkout with missing required fields (1.2s)
+ 2.  ✓  2 [chromium] › tests\checkout.spec.js:6:5 › Add to Cart & Checkout (1.4s)
+ 3.  ✓  3 [webkit] › tests\checkout.spec.js:30:5 › Checkout with missing required fields (2.2s)
+ 5.  ✓  4 [firefox] › tests\checkout.spec.js:30:5 › Checkout with missing required fields (2.7s)
+ 6.  ✓  5 [firefox] › tests\checkout.spec.js:6:5 › Add to Cart & Checkout (4.1s)
+ 7.  ✓  6 [webkit] › tests\checkout.spec.js:6:5 › Add to Cart & Checkout (2.9s)
+~
+  6 passed (5.7s)
+
+- To open last HTML report run:
+
+  npx playwright show-report
