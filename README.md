@@ -12,7 +12,7 @@ It covers positive, and negative test cases and generates HTML test reports.
 - Locked out user
 - Empty credentials
 - Case sensitive credentials
-- Successful checkout
+- Successful checkout (done with playwright codegen)
 - Unsucessful checkout (missing postal details) 
 - Basic UI validation (error messages, titles, texts displayed)
 
