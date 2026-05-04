@@ -1,7 +1,7 @@
 # SauceDemo Automation Tests - Login + Checkout (Playwright + JavaScript)
 
 This project contains automated UI tests for the login feature of https://www.saucedemo.com/
-using Playwright with JavaScript.
+and for the product checkout process using Playwright with JavaScript.
 
 It covers positive, and negative test cases and generates HTML test reports.
 
