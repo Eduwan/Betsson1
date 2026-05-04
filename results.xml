@@ -1,0 +1,44 @@
+<testsuites id="" name="" tests="18" failures="0" skipped="0" errors="0" time="9.064757000000002">
+<testsuite name="LoginTests.spec.js" timestamp="2026-05-04T11:25:40.124Z" hostname="chromium" tests="6" failures="0" skipped="0" time="9.346" errors="0">
+<testcase name="Login Feature Tests › Successful login" classname="LoginTests.spec.js" time="1.788">
+</testcase>
+<testcase name="Login Feature Tests › Invalid password" classname="LoginTests.spec.js" time="1.479">
+</testcase>
+<testcase name="Login Feature Tests › Locked user login" classname="LoginTests.spec.js" time="1.477">
+</testcase>
+<testcase name="Login Feature Tests › Empty credentials" classname="LoginTests.spec.js" time="1.488">
+</testcase>
+<testcase name="Login Feature Tests › Case sensitive username" classname="LoginTests.spec.js" time="1.529">
+</testcase>
+<testcase name="Login Feature Tests › Case sensitive password" classname="LoginTests.spec.js" time="1.585">
+</testcase>
+</testsuite>
+<testsuite name="LoginTests.spec.js" timestamp="2026-05-04T11:25:40.124Z" hostname="firefox" tests="6" failures="0" skipped="0" time="26.303" errors="0">
+<testcase name="Login Feature Tests › Successful login" classname="LoginTests.spec.js" time="4.818">
+</testcase>
+<testcase name="Login Feature Tests › Invalid password" classname="LoginTests.spec.js" time="5.403">
+</testcase>
+<testcase name="Login Feature Tests › Locked user login" classname="LoginTests.spec.js" time="2.425">
+</testcase>
+<testcase name="Login Feature Tests › Empty credentials" classname="LoginTests.spec.js" time="3.141">
+</testcase>
+<testcase name="Login Feature Tests › Case sensitive username" classname="LoginTests.spec.js" time="3.958">
+</testcase>
+<testcase name="Login Feature Tests › Case sensitive password" classname="LoginTests.spec.js" time="6.558">
+</testcase>
+</testsuite>
+<testsuite name="LoginTests.spec.js" timestamp="2026-05-04T11:25:40.124Z" hostname="webkit" tests="6" failures="0" skipped="0" time="11.484" errors="0">
+<testcase name="Login Feature Tests › Successful login" classname="LoginTests.spec.js" time="2.411">
+</testcase>
+<testcase name="Login Feature Tests › Invalid password" classname="LoginTests.spec.js" time="2.275">
+</testcase>
+<testcase name="Login Feature Tests › Locked user login" classname="LoginTests.spec.js" time="2.177">
+</testcase>
+<testcase name="Login Feature Tests › Empty credentials" classname="LoginTests.spec.js" time="2.213">
+</testcase>
+<testcase name="Login Feature Tests › Case sensitive username" classname="LoginTests.spec.js" time="1.237">
+</testcase>
+<testcase name="Login Feature Tests › Case sensitive password" classname="LoginTests.spec.js" time="1.171">
+</testcase>
+</testsuite>
+</testsuites>

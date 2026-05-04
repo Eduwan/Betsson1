@@ -41,4 +41,23 @@ test.describe('Login Feature Tests', () => {
     await expect(page.locator('[data-test="error"]')).toBeVisible();
   });
 
+ test('Case sensitive username', async ({ page }) => {
+    const loginFeature = new LoginFeature(page);
+
+    await loginFeature.goto();
+    await loginFeature.login('standard_usER', 'secret_sauce');
+
+    await expect(page.locator('[data-test="error"]')).toBeVisible();
+  });
+
+  test('Case sensitive password', async ({ page }) => {
+    const loginFeature = new LoginFeature(page);
+
+    await loginFeature.goto();
+    await loginFeature.login('standard_user', 'secret_Sauce');
+
+    await expect(page.locator('[data-test="error"]')).toBeVisible();
+  });
+
+
 });
