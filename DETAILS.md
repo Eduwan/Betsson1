@@ -22,8 +22,9 @@ Running 18 tests using 16 workers
 18.  ✓  18 [webkit] › tests\LoginTests.spec.js:44:6 › Login Feature Tests › Case sensitive username (1.1s)
 ~                                                                                                                            
  . 18 passed (12.6s)                                                                                                          
-~                                                                                                                       6    
-. To open last HTML report run:
+~
+~                                                                                                                6    
+To open last HTML report run:
 
   npx playwright show-report
 
