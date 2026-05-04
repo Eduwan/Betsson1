@@ -32,14 +32,14 @@ It covers positive, and negative test cases and generates HTML test reports.
 
 ## Project Structure
 
-tests/
+1- tests/
   LoginTests.spec.js
   checkout.specs.js
-pages/
+2- pages/
   LoginFeature.js
-playwright.config.js
-package.json
-test-results.json
+3- playwright.config.js
+4- package.json
+5- test-results.json
 
 
 ## Installation
