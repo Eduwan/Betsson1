@@ -56,9 +56,9 @@ test-results.json
 Run all tests:
 npx playwright test
 
-or run them individually:/
-npx playwright test tests/LoginTests.spec.js/
-npx playwright test tests/checkout.spec.js
+or run them individually:
+1. npx playwright test tests/LoginTests.spec.js
+2. npx playwright test tests/checkout.spec.js
 
 
 ## Test Reports
