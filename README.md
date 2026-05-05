@@ -13,7 +13,8 @@ It covers positive, and negative test cases and generates HTML test reports.
 - Empty credentials
 - Case sensitive credentials
 - Successful checkout (done with playwright codegen)
-- Unsucessful checkout (missing postal details) 
+- Unsucessful checkout (missing postal details)
+- Successful checkout of empty chart, with assert that paid amount is 0.00
 - Basic UI validation (error messages, titles, texts displayed)
 
 ## Technology used
