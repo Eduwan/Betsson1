@@ -1,7 +1,7 @@
-# SauceDemo Login Automation (Playwright + JavaScript)
+# SauceDemo Automation Tests - Login + Checkout (Playwright + JavaScript)
 
 This project contains automated UI tests for the login feature of https://www.saucedemo.com/
-using Playwright with JavaScript.
+and for the product checkout process using Playwright with JavaScript.
 
 It covers positive, and negative test cases and generates HTML test reports.
 
@@ -11,7 +11,10 @@ It covers positive, and negative test cases and generates HTML test reports.
 - Invalid username/password combinations
 - Locked out user
 - Empty credentials
-- Basic UI validation (error messages, redirects)
+- Case sensitive credentials
+- Successful checkout (done with playwright codegen)
+- Unsucessful checkout (missing postal details) 
+- Basic UI validation (error messages, titles, texts displayed)
 
 ## Technology used
 
@@ -29,14 +32,14 @@ It covers positive, and negative test cases and generates HTML test reports.
 
 ## Project Structure
 
-tests/
+1. tests/
   LoginTests.spec.js
   checkout.specs.js
-pages/
+2. pages/
   LoginFeature.js
-playwright.config.js
-package.json
-test-results.json
+3. playwright.config.js
+4. package.json
+5. test-results.json
 
 
 ## Installation
