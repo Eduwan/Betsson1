@@ -43,3 +43,26 @@ test('Checkout with missing required fields', async ({ page }) => {
   await expect(page.locator('[data-test="error"]'))
     .toContainText('Error: First Name is required');
 });
+
+
+test('Checkout empty cart', async ({ page }) => {
+  const loginFeature = new LoginFeature(page);
+  
+      await loginFeature.goto();
+      await loginFeature.login('standard_user', 'secret_sauce');
+
+  // Enter the Chart without having selected any product
+  await page.locator('[data-test="shopping-cart-link"]').click();
+  await page.locator('[data-test="checkout"]').click();
+
+  // Fill postal info and continue
+  await page.locator('[data-test="firstName"]').fill('Edu');
+  await page.locator('[data-test="lastName"]').fill('Ruiz');
+  await page.locator('[data-test="postalCode"]').fill('29016');
+  await page.locator('[data-test="continue"]').click();
+
+   // assert for title and total value paid
+  await expect(page.locator('[data-test="title"]')).toContainText('Checkout: Overview');
+  await expect(page.locator('[data-test="total-label"]')).toContainText('0.00');
+
+});
