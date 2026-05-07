@@ -42,7 +42,7 @@ Running 9 tests using 9 workers
 8.  ✓  8 [firefox] › tests\checkout.spec.js:30:5 › Checkout with missing required fields (4.4s)
 9.  ✓  9 [webkit] › tests\checkout.spec.js:6:5 › Add to Cart & Checkout (4.9s)
 ~
-. 9 passed (10.7s)
+ . 9 passed (10.7s)
 
 - To open last HTML report run:
 
