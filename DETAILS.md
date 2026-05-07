@@ -30,16 +30,19 @@ Running 18 tests using 16 workers
 
 # Checkout Tests Report:
 
-Running 6 tests using 6 workers
-
- 1.  ✓  1 [chromium] › tests\checkout.spec.js:30:5 › Checkout with missing required fields (1.2s)
- 2.  ✓  2 [chromium] › tests\checkout.spec.js:6:5 › Add to Cart & Checkout (1.4s)
- 3.  ✓  3 [webkit] › tests\checkout.spec.js:30:5 › Checkout with missing required fields (2.2s)
- 5.  ✓  4 [firefox] › tests\checkout.spec.js:30:5 › Checkout with missing required fields (2.7s)
- 6.  ✓  5 [firefox] › tests\checkout.spec.js:6:5 › Add to Cart & Checkout (4.1s)
- 7.  ✓  6 [webkit] › tests\checkout.spec.js:6:5 › Add to Cart & Checkout (2.9s)
+Running 9 tests using 9 workers
 ~
-  6 passed (5.7s)
+1.  ✓  1 [webkit] › tests\checkout.spec.js:48:5 › Checkout empty cart (3.9s)
+2.  ✓  2 [chromium] › tests\checkout.spec.js:6:5 › Add to Cart & Checkout (2.0s)
+3.  ✓  3 [chromium] › tests\checkout.spec.js:30:5 › Checkout with missing required fields (1.8s)
+4.  ✓  4 [firefox] › tests\checkout.spec.js:6:5 › Add to Cart & Checkout (8.2s)
+5.  ✓  5 [webkit] › tests\checkout.spec.js:30:5 › Checkout with missing required fields (3.4s)
+6.  ✓  6 [chomium] › tests\checkout.spec.js:48:5 › Checkout empty cart (1.8s)
+7.  ✓  7 [firefox] › tests\checkout.spec.js:48:5 › Checkout empty cart (6.0s)
+8.  ✓  8 [firefox] › tests\checkout.spec.js:30:5 › Checkout with missing required fields (4.4s)
+9.  ✓  9 [webkit] › tests\checkout.spec.js:6:5 › Add to Cart & Checkout (4.9s)
+~
+ . 9 passed (10.7s)
 
 - To open last HTML report run:
 
