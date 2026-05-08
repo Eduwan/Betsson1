@@ -1,13 +1,13 @@
 import { test, expect } from '@playwright/test';
 import { LoginFeature } from '../pages/LoginFeature';
+const credentials = require('../data/credentials');
 
 // Created using the codegen playwright feature
 
 test('Add to Cart & Checkout', async ({ page }) => {
   const loginFeature = new LoginFeature(page);
-  
       await loginFeature.goto();
-      await loginFeature.login('standard_user', 'secret_sauce');
+      await loginFeature.login(credentials.standard.username,credentials.standard.password);
 
   await page.locator('[data-test="add-to-cart-sauce-labs-bike-light"]').click();
   await page.locator('[data-test="add-to-cart-sauce-labs-bolt-t-shirt"]').click();
@@ -31,7 +31,7 @@ test('Checkout with missing required fields', async ({ page }) => {
   const loginFeature = new LoginFeature(page);
   
       await loginFeature.goto();
-      await loginFeature.login('standard_user', 'secret_sauce');
+      await loginFeature.login(credentials.standard.username,credentials.standard.password);
 
   await page.locator('[data-test="add-to-cart-sauce-labs-bike-light"]').click();
   await page.locator('[data-test="shopping-cart-link"]').click();
@@ -49,7 +49,7 @@ test('Checkout empty cart', async ({ page }) => {
   const loginFeature = new LoginFeature(page);
   
       await loginFeature.goto();
-      await loginFeature.login('standard_user', 'secret_sauce');
+      await loginFeature.login(credentials.standard.username,credentials.standard.password);
 
   // Enter the Chart without having selected any product
   await page.locator('[data-test="shopping-cart-link"]').click();

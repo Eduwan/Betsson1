@@ -1,26 +1,26 @@
-<testsuites id="" name="" tests="9" failures="0" skipped="0" errors="0" time="6.3126500000000005">
-<testsuite name="checkout.spec.js" timestamp="2026-05-05T14:00:19.121Z" hostname="chromium" tests="3" failures="0" skipped="0" time="3.641" errors="0">
-<testcase name="Add to Cart &amp; Checkout" classname="checkout.spec.js" time="1.345">
+<testsuites id="" name="" tests="9" failures="0" skipped="0" errors="0" time="6.158867">
+<testsuite name="checkout.spec.js" timestamp="2026-05-08T06:30:27.414Z" hostname="chromium" tests="3" failures="0" skipped="0" time="3.375" errors="0">
+<testcase name="Add to Cart &amp; Checkout" classname="checkout.spec.js" time="1.23">
 </testcase>
-<testcase name="Checkout with missing required fields" classname="checkout.spec.js" time="1.152">
+<testcase name="Checkout with missing required fields" classname="checkout.spec.js" time="1.064">
 </testcase>
-<testcase name="Checkout empty cart" classname="checkout.spec.js" time="1.144">
-</testcase>
-</testsuite>
-<testsuite name="checkout.spec.js" timestamp="2026-05-05T14:00:19.121Z" hostname="firefox" tests="3" failures="0" skipped="0" time="10.33" errors="0">
-<testcase name="Add to Cart &amp; Checkout" classname="checkout.spec.js" time="4.626">
-</testcase>
-<testcase name="Checkout with missing required fields" classname="checkout.spec.js" time="3.276">
-</testcase>
-<testcase name="Checkout empty cart" classname="checkout.spec.js" time="2.428">
+<testcase name="Checkout empty cart" classname="checkout.spec.js" time="1.081">
 </testcase>
 </testsuite>
-<testsuite name="checkout.spec.js" timestamp="2026-05-05T14:00:19.121Z" hostname="webkit" tests="3" failures="0" skipped="0" time="7.836" errors="0">
-<testcase name="Add to Cart &amp; Checkout" classname="checkout.spec.js" time="3.063">
+<testsuite name="checkout.spec.js" timestamp="2026-05-08T06:30:27.414Z" hostname="firefox" tests="3" failures="0" skipped="0" time="10.738" errors="0">
+<testcase name="Add to Cart &amp; Checkout" classname="checkout.spec.js" time="3.652">
 </testcase>
-<testcase name="Checkout with missing required fields" classname="checkout.spec.js" time="2.465">
+<testcase name="Checkout with missing required fields" classname="checkout.spec.js" time="2.352">
 </testcase>
-<testcase name="Checkout empty cart" classname="checkout.spec.js" time="2.308">
+<testcase name="Checkout empty cart" classname="checkout.spec.js" time="4.734">
+</testcase>
+</testsuite>
+<testsuite name="checkout.spec.js" timestamp="2026-05-08T06:30:27.414Z" hostname="webkit" tests="3" failures="0" skipped="0" time="7.044" errors="0">
+<testcase name="Add to Cart &amp; Checkout" classname="checkout.spec.js" time="2.763">
+</testcase>
+<testcase name="Checkout with missing required fields" classname="checkout.spec.js" time="2.106">
+</testcase>
+<testcase name="Checkout empty cart" classname="checkout.spec.js" time="2.175">
 </testcase>
 </testsuite>
 </testsuites>

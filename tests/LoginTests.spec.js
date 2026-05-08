@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { LoginFeature } from '../pages/LoginFeature';
+const credentials = require('../data/credentials');
 
 test.describe('Login Feature Tests', () => {
 
@@ -7,7 +8,7 @@ test.describe('Login Feature Tests', () => {
     const loginFeature = new LoginFeature(page);
 
     await loginFeature.goto();
-    await loginFeature.login('standard_user', 'secret_sauce');
+    await loginFeature.login(credentials.standard.username,credentials.standard.password);
 
     await expect(page).toHaveURL(/inventory/);
     await expect(page.locator('.title')).toHaveText('Products');
@@ -17,7 +18,7 @@ test.describe('Login Feature Tests', () => {
     const loginFeature = new LoginFeature(page);
 
     await loginFeature.goto();
-    await loginFeature.login('standard_user', 'wrong_pass');
+    await loginFeature.login(credentials.wrong.username, credentials.wrong.password);
 
     await expect(page.locator('[data-test="error"]')).toBeVisible();
   });
@@ -26,7 +27,7 @@ test.describe('Login Feature Tests', () => {
     const loginFeature = new LoginFeature(page);
 
     await loginFeature.goto();
-    await loginFeature.login('locked_out_user', 'secret_sauce');
+    await loginFeature.login(credentials.locked.username, credentials.locked.password);
 
     const error = await loginFeature.getErrorMessage();
     expect(error).toContain('locked out');
@@ -36,7 +37,7 @@ test.describe('Login Feature Tests', () => {
     const loginFeature = new LoginFeature(page);
 
     await loginFeature.goto();
-    await loginFeature.login('', '');
+    await loginFeature.login(credentials.empty.username, credentials.empty.password);
 
     await expect(page.locator('[data-test="error"]')).toBeVisible();
   });
@@ -45,7 +46,7 @@ test.describe('Login Feature Tests', () => {
     const loginFeature = new LoginFeature(page);
 
     await loginFeature.goto();
-    await loginFeature.login('standard_usER', 'secret_sauce');
+    await loginFeature.login(credentials.upperUser.username, credentials.upperUser.password);
 
     await expect(page.locator('[data-test="error"]')).toBeVisible();
   });
@@ -54,7 +55,7 @@ test.describe('Login Feature Tests', () => {
     const loginFeature = new LoginFeature(page);
 
     await loginFeature.goto();
-    await loginFeature.login('standard_user', 'Secret_Sauce');
+    await loginFeature.login(credentials.upperPass.username, credentials.upperPass.password);
 
     await expect(page.locator('[data-test="error"]')).toBeVisible();
   });
