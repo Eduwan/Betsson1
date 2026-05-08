@@ -29,6 +29,7 @@ It covers positive, and negative test cases and generates HTML test reports.
 - Reusable page classes
 - Independent test cases
 - Playwright test runner
+- Credentials layer to avoid hardcoding.
 
 
 ## Project Structure
